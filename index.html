@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Challenge 2 | Juego Ahorcado</title>
+  <meta content="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="./style.css" /> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <section id="pag_principal" class="container_principal">
+    <div class="logo">
+        <img class="logoa" src="imagenes/Logo.png" alt="logo-alura">
+    </div>
+    <div class="titulo">
+      <img class="imagen" src="imagenes/sombrero.png" alt="sombrero">
+      <p class="textPrincipal">ahorcado</p>
+    </div>
+
+     <!-- Botones  de inicio-->
+    <div class="botones_principales" id="principal">
+        <input type="button" class="btn_iniciar" id="iniciar_juego" value="Iniciar Juego" onclick="iniciarJuego()">
+        <input type="button" class="btn_agregar" id="btn_agregarPalabra" value="Agregar Palabra" onclick="agregarPalabra()">
+    </div>
+</section>
+      
+  <!-- Agregar una nueva palabra -->
+<section id="aparecer_container" class="container_txt" style="display:none">
+  <textarea class="add_input" id="input_txt" cols="27" rows="1"  maxlength="10" placeholder="Escriba una palabra"></textarea>
+
+  <div class="aviso">
+      <label for=""> Máximo 8 carácteres</label>
+  </div>
+
+  <div class="botones2">
+      <input type="button" class="btn_agregar_" id="btn_add" value="Agregar palabra" onclick="add_palabra()">
+      <input type="button" class="btn_cancel" id="btn_return" value="Cancelar" onclick="desistir()">
+  </div>
+</section>
+ <!-- Juego -->
+<section class="container_juego" id="aparecer_juego" style="display:none">
+  <div class="hombre-ahorcado">
+    <img id="hombre" alt="hombre-ahorcado"/>
+  </div>
+  <div class="adivinado"></div>
+  <div class="errado"></div>
+  
+  <form class="botones" action="javascript:void(0)">
+     <input type="button" class="nuevo" value="Nuevo juego" onclick="nuevoJuego()"/>
+     <input type="button" class="desistir" value="Desistir" onclick="desistir()"/>
+  </form>
+</section>
+
+<script src="./horca.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

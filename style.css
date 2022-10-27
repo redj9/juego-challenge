@@ -1,0 +1,163 @@
+body {
+    background-image: url("imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textPrincipal {
+    font-size: 40px;
+    font-family: 'Butcherman', cursive;
+  }
+
+  #iniciar_juego {
+    color: #fff;
+    border-color: #000;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #000;
+    color: #000;
+    background: inherit;
+    margin-top: 20rem;
+    margin-left: 20rem;
+    cursor: pointer;
+  }
+
+  #btn_agregarPalabra {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #000;
+    color: #000;
+    background: inherit;
+    margin-top: 20rem;
+    margin-left: .5rem;
+    cursor: pointer;
+  }
+
+  .add_input{
+    margin-top: 17.5rem;
+    margin-left: 34rem;
+  }
+
+  .aviso {
+    margin-top: .1rem;
+    margin-left: 34rem;
+  }
+
+  .btn_agregar_ {
+    color: #fff;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: .5rem;
+    margin-left: 20rem;
+    border-radius: 1rem;
+    border: solid 1px #000;
+    color: #000;
+    background: inherit;
+    cursor: pointer;
+  }
+
+  .btn_cancel{
+    color: #fff;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    border-radius: 1rem;
+    border: solid 1px #000;
+    color: #000;
+    background: inherit;
+    cursor: pointer;
+  }
+  
+  #hombre {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+  }
+  
+  .hombre-ahorcado {
+    width: 100vw;
+    text-align: center;
+    margin-top:  4rem;
+    margin-bottom: 2rem;
+    height: 20.75rem;
+  }
+  
+  .adivinado {
+    text-align: center;
+    color: #000;
+    font-size: 1.8rem;
+  }
+  
+  .letra {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .adivinada {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-bottom: solid 1px #000;
+    margin-left: 0.4rem;
+    line-height: 4.5rem;
+  }
+  
+  .errado {
+    text-align:  center;
+    margin-top: 1rem;
+    color: #242d34;
+  }
+  
+  .errada {
+    margin-left: 1rem;
+  }
+  
+  .nuevo {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #000;
+    color: #000;
+    background: inherit;
+    cursor: pointer;
+  }
+
+  .desistir {
+    background-color: #fff;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #000;
+    color: #000;
+    background: inherit;
+    cursor: pointer;
+  }
+  
+  .botones {
+    text-align: center;
+    margin-top: 3rem;
+  }
